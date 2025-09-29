@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsla(0, 0%, 100%, 0.787);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.btnchoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.btnchoice button {
+  padding: 0.8rem 1.5rem;
+  background-color: hsl(173, 100%, 55%);
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btnchoice button:hover {
+  background-color: hsl(173, 100%, 45%);
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.result h3 {
+  font-size: 1.5rem;
+}
+.result h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.win {
+  color: hsla(120, 87%, 52%, 0.909);
+}
+.lose {
+  color: rgb(255, 0, 0);
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
