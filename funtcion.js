@@ -16,6 +16,7 @@ let pScore = 0;
 
 choiceRock.addEventListener("click", () => {
   let randomChoice = choices[Math.floor(Math.random() * 3)];
+  finalStatment.classList.remove("lose", "win");
 
   if (randomChoice === "rock") {
     playerChoice.textContent = "Rock";
@@ -25,12 +26,14 @@ choiceRock.addEventListener("click", () => {
     playerChoice.textContent = "Rock";
     computerChoice.textContent = "Scissors";
     finalStatment.textContent = "You win!";
+    finalStatment.classList.add("win");
     pScore++;
     playerScore.textContent = pScore;
   } else {
     playerChoice.textContent = "Rock";
     computerChoice.textContent = "Paper";
     finalStatment.textContent = "You lose!";
+    finalStatment.classList.add("lose");
     cScore++;
     computerScore.textContent = cScore;
   }
@@ -38,17 +41,21 @@ choiceRock.addEventListener("click", () => {
 
 choicePaper.addEventListener("click", () => {
   let randomChoice = choices[Math.floor(Math.random() * 3)];
+  finalStatment.classList.remove("lose", "win");
 
   if (randomChoice === "rock") {
     playerChoice.textContent = "Paper";
     computerChoice.textContent = "Rock";
     finalStatment.textContent = "You win!";
+    finalStatment.classList.add("win");
     pScore++;
     playerScore.textContent = pScore;
   } else if (randomChoice === "scissors") {
     playerChoice.textContent = "Paper";
     computerChoice.textContent = "Scissors";
     finalStatment.textContent = "You lose!";
+    finalStatment.classList.add("lose");
+
     cScore++;
     computerScore.textContent = cScore;
   } else {
@@ -60,11 +67,13 @@ choicePaper.addEventListener("click", () => {
 
 choiceScissors.addEventListener("click", () => {
   let randomChoice = choices[Math.floor(Math.random() * 3)];
+  finalStatment.classList.remove("lose", "win");
 
   if (randomChoice === "rock") {
     playerChoice.textContent = "Scissors";
     computerChoice.textContent = "Rock";
     finalStatment.textContent = "You lose!";
+    finalStatment.classList.add("lose");
     cScore++;
     computerScore.textContent = cScore;
   } else if (randomChoice === "scissors") {
@@ -75,7 +84,45 @@ choiceScissors.addEventListener("click", () => {
     playerChoice.textContent = "Scissors";
     computerChoice.textContent = "Paper";
     finalStatment.textContent = "You win!";
+    finalStatment.classList.add("win");
     pScore++;
     playerScore.textContent = pScore;
   }
 });
+
+let personArray = [
+  {
+    name: "Alex",
+    age: 30,
+    product: "Bucket",
+    price: 10,
+  },
+  {
+    name: "Bruce",
+    age: 40,
+    product: "Chicken",
+    price: 30,
+  },
+  {
+    name: "Alice",
+    age: 12,
+    product: "Toy",
+    price: 50,
+  },
+  {
+    name: "Lizz",
+    age: 34,
+    product: "Book",
+    price: 40,
+  },
+];
+
+const getPrice = personArray
+  .map((el) => {
+    return el.price;
+  })
+  .reduce((pre, cur) => {
+    return pre + cur;
+  });
+
+console.log(getPrice);

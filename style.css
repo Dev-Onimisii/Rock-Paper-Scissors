@@ -53,7 +53,6 @@ h1 {
 .lose {
   color: rgb(255, 0, 0);
 }
-
 .scores {
   display: flex;
   flex-direction: column;
@@ -61,4 +60,13 @@ h1 {
   align-items: center;
   margin-top: 2rem;
   gap: 1rem;
+}
+.instruction {
+  padding: 0.8rem 1.5rem;
+  background-color: hsl(173, 100%, 55%);
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.5s;
 }
