@@ -3,6 +3,8 @@ const choicePaper = document.querySelector("#paper");
 const choiceScissors = document.querySelector("#scissors");
 const playerChoice = document.querySelector(".playerChoice");
 const displayInstruction = document.querySelector(".instruction");
+
+const showBtn = document.querySelector(".showbtn");
 const layoutInstruction = document.querySelector(".layout");
 
 const playerScore = document.querySelector(".playerscore");
@@ -15,6 +17,11 @@ let choices = ["rock", "paper", "scissors"];
 
 let cScore = 0;
 let pScore = 0;
+
+showBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  layoutInstruction.classList.replace("show", "layout");
+});
 
 displayInstruction.addEventListener("click", (e) => {
   e.preventDefault();
