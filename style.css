@@ -95,7 +95,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-right: 2rem;
 }
 .showbtn {
@@ -120,4 +120,8 @@ h1 {
 }
 .main h2 {
   font-size: 2rem;
+}
+.main p,
+li {
+  font-weight: bold;
 }
