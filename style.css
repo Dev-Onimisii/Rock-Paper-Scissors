@@ -63,10 +63,25 @@ h1 {
 }
 .instruction {
   padding: 0.8rem 1.5rem;
+  margin-top: 3rem;
   background-color: hsl(173, 100%, 55%);
   font-weight: bold;
   border: none;
   border-radius: 0.4rem;
   cursor: pointer;
   transition: 0.5s;
+}
+.instruction:hover {
+  background-color: hsl(173, 100%, 45%);
+}
+
+/* Styling the how to play game. */
+
+.layout {
+  background-color: aquamarine;
+  width: 30%;
+  height: 30rem;
+  position: fixed;
+  margin-left: 3rem;
+  border-radius: 1rem;
 }
