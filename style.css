@@ -81,10 +81,24 @@ h1 {
   display: none;
 }
 .show {
-  background-color: aquamarine;
-  width: 30%;
+  background-color: hsl(158, 12%, 13%);
+  width: 40%;
   height: 30rem;
+  margin-left: 29rem;
   position: fixed;
   border-radius: 1rem;
   display: block;
+  box-shadow: 2px 2px 7px hsla(0, 0%, 0%, 0.827);
+  transition: 0.5s;
+}
+.showbtn {
+  background-color: hsl(173, 100%, 55%);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+.showbtn:hover {
+  background-color: hsl(173, 100%, 45%);
 }

@@ -4,7 +4,6 @@ const choiceScissors = document.querySelector("#scissors");
 const playerChoice = document.querySelector(".playerChoice");
 const displayInstruction = document.querySelector(".instruction");
 const layoutInstruction = document.querySelector(".layout");
-console.log(layoutInstruction);
 
 const playerScore = document.querySelector(".playerscore");
 const computerScore = document.querySelector(".computerscore");
