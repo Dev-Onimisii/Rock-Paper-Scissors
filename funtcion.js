@@ -19,7 +19,7 @@ let pScore = 0;
 
 displayInstruction.addEventListener("click", (e) => {
   e.preventDefault();
-  layoutInstruction.classList.replace("layout", "hello");
+  layoutInstruction.classList.replace("layout", "show");
 });
 
 choiceRock.addEventListener("click", (e) => {

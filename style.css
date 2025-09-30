@@ -78,14 +78,9 @@ h1 {
 /* Styling the how to play game. */
 
 .layout {
-  background-color: aquamarine;
-  width: 30%;
-  height: 30rem;
-  position: fixed;
-  border-radius: 1rem;
   display: none;
 }
-.hello {
+.show {
   background-color: aquamarine;
   width: 30%;
   height: 30rem;
