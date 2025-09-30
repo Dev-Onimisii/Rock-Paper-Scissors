@@ -82,6 +82,14 @@ h1 {
   width: 30%;
   height: 30rem;
   position: fixed;
-  margin-left: 3rem;
   border-radius: 1rem;
+  display: none;
+}
+.hello {
+  background-color: aquamarine;
+  width: 30%;
+  height: 30rem;
+  position: fixed;
+  border-radius: 1rem;
+  display: block;
 }

@@ -2,6 +2,9 @@ const choiceRock = document.querySelector("#rock");
 const choicePaper = document.querySelector("#paper");
 const choiceScissors = document.querySelector("#scissors");
 const playerChoice = document.querySelector(".playerChoice");
+const displayInstruction = document.querySelector(".instruction");
+const layoutInstruction = document.querySelector(".layout");
+console.log(layoutInstruction);
 
 const playerScore = document.querySelector(".playerscore");
 const computerScore = document.querySelector(".computerscore");
@@ -14,7 +17,13 @@ let choices = ["rock", "paper", "scissors"];
 let cScore = 0;
 let pScore = 0;
 
-choiceRock.addEventListener("click", () => {
+displayInstruction.addEventListener("click", (e) => {
+  e.preventDefault();
+  layoutInstruction.classList.replace("layout", "hello");
+});
+
+choiceRock.addEventListener("click", (e) => {
+  e.preventDefault();
   let randomChoice = choices[Math.floor(Math.random() * 3)];
   finalStatment.classList.remove("lose", "win");
 
@@ -39,7 +48,9 @@ choiceRock.addEventListener("click", () => {
   }
 });
 
-choicePaper.addEventListener("click", () => {
+choicePaper.addEventListener("click", (e) => {
+  e.preventDefault();
+
   let randomChoice = choices[Math.floor(Math.random() * 3)];
   finalStatment.classList.remove("lose", "win");
 
@@ -65,7 +76,8 @@ choicePaper.addEventListener("click", () => {
   }
 });
 
-choiceScissors.addEventListener("click", () => {
+choiceScissors.addEventListener("click", (e) => {
+  e.preventDefault();
   let randomChoice = choices[Math.floor(Math.random() * 3)];
   finalStatment.classList.remove("lose", "win");
 
@@ -90,39 +102,39 @@ choiceScissors.addEventListener("click", () => {
   }
 });
 
-let personArray = [
-  {
-    name: "Alex",
-    age: 30,
-    product: "Bucket",
-    price: 10,
-  },
-  {
-    name: "Bruce",
-    age: 40,
-    product: "Chicken",
-    price: 30,
-  },
-  {
-    name: "Alice",
-    age: 12,
-    product: "Toy",
-    price: 50,
-  },
-  {
-    name: "Lizz",
-    age: 34,
-    product: "Book",
-    price: 40,
-  },
-];
+// let personArray = [
+//   {
+//     name: "Alex",
+//     age: 30,
+//     product: "Bucket",
+//     price: 10,
+//   },
+//   {
+//     name: "Bruce",
+//     age: 40,
+//     product: "Chicken",
+//     price: 30,
+//   },
+//   {
+//     name: "Alice",
+//     age: 12,
+//     product: "Toy",
+//     price: 50,
+//   },
+//   {
+//     name: "Lizz",
+//     age: 34,
+//     product: "Book",
+//     price: 40,
+//   },
+// ];
 
-const getPrice = personArray
-  .map((el) => {
-    return el.price;
-  })
-  .reduce((pre, cur) => {
-    return pre + cur;
-  });
+// const getPrice = personArray
+//   .map((el) => {
+//     return el.price;
+//   })
+//   .reduce((pre, cur) => {
+//     return pre + cur;
+//   });
 
-console.log(getPrice);
+// console.log(getPrice);
