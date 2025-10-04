@@ -125,3 +125,9 @@ h1 {
 li {
   font-weight: bold;
 }
+
+@media (max-width: 600px) {
+  .show {
+    width: 90%;
+  }
+}
