@@ -129,5 +129,10 @@ li {
 @media (max-width: 600px) {
   .show {
     width: 90%;
+    left: 50;
+    margin-left: 0;
+    height: auto;
+    min-height: 60vh;
+    padding-bottom: 2rem;
   }
 }
