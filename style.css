@@ -138,4 +138,7 @@ li {
   .main h2 {
     font-size: 1.3rem;
   }
+  .main {
+    gap: 1rem;
+  }
 }
