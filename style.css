@@ -142,4 +142,7 @@ li {
     gap: 1rem;
     padding: 1rem;
   }
+  .forbtn {
+    margin-right: 1rem;
+  }
 }
